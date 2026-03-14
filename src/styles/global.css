@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #ebe2d9; /*background color*/
+  --container-bck-color: #f5f0eb; /*container background*/
+  --headings-color: #3b0764; /*headings, primary*/
+  --hovering-color: #7c3aed; /*links, hovers*/
+  --Gold-Brass: #b8860b; /*decorative accents*/
+  --Menu-Text: #1c1017; /*(body text, near-black */
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.container {
+  background-color: var(--container-bck-color);
+  border: 1px solid var(--Gold-Brass);
+  margin: 17px auto;
+  max-width: 290px;
+  height: 600px;
+}
