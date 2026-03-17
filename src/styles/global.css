@@ -50,6 +50,11 @@ main {
   overflow-y: auto;
 }
 
+/* Add scroll margin to sections to account for navbar */
+section {
+  scroll-margin-top: 80px;
+}
+
 /*  */
 .section-end {
   width: 100px;
