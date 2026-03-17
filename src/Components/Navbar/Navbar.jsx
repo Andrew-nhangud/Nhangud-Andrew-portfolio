@@ -20,7 +20,7 @@ export const Navbar = () => {
   const handleLinkClick = () => setIsOpen(false);
 
   return (
-    <div className="inner-container desktop-navbar">
+    <div className="inner-container ">
       <div className="inner-navbar">
         {/* logo */}
         <p id="hero" className="logo">
@@ -34,6 +34,15 @@ export const Navbar = () => {
           onClick={toggleMenu}
           className="mobile-toggle"
         />
+
+        {/* Desktop Menu */}
+        <ul className="desktop-menu">
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <a href={`#${link.id}`}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* Mobile Menu */}
@@ -55,15 +64,6 @@ export const Navbar = () => {
           </div>
         </ul>
       )}
-
-      {/* Desktop Menu */}
-      <ul className="desktop-menu">
-        {navLinks.map((link) => (
-          <li key={link.id}>
-            <a href={`#${link.id}`}>{link.label}</a>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };
