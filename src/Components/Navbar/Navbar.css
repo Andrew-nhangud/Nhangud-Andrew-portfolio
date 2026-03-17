@@ -67,12 +67,10 @@ img {
 
 /**/
 @media (min-width: 768px) {
-  /* the main container for the desktop menu*/
-  .desktop-navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  /* inner navbar contianer */
+  .inner-navbar {
+    gap: 140px;
+    margin-bottom: 10px;
   }
 
   /* inner container for the desktop menu items */
