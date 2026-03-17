@@ -17,11 +17,12 @@ img {
 .inner-container {
   position: absolute;
   top: 0;
-  left: 50%;
   transform: translateX(-50%); /* Center the inner container horizontally */
-  width: 90%;
   background-color: var(--container-bck-color);
   z-index: 1000; /* Ensure the navbar is above other content */
+  width: 100%;
+  left: 0;
+  transform: none;
 }
 
 /* styles for the menu items*/
@@ -78,6 +79,12 @@ img {
 
 /**/
 @media (min-width: 768px) {
+  /*styles for the inner container*/
+  .inner-container {
+    top: 0;
+    width: 94%;
+  }
+
   /* inner navbar contianer */
   .inner-navbar {
     gap: 140px;
@@ -104,13 +111,6 @@ img {
   }
   .mobile-toggle {
     display: none; /* hiding the mobile toggle on desktop */
-  }
-}
-
-@media (min-width: 768px) {
-  .inner-container {
-    top: 0;
-    width: 94%;
   }
 }
 
