@@ -1,5 +1,6 @@
 import "./styles/global.css";
 import { Navbar } from "./Components/Navbar/Navbar";
+import { Hero } from "./Components/Hero/Hero";
 
 function App() {
   return (
@@ -7,7 +8,9 @@ function App() {
       <nav>
         <Navbar />
       </nav>
-      <main></main>
+      <main>
+        <Hero />
+      </main>
     </div>
   );
 }
