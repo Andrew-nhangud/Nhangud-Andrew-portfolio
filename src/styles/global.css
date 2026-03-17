@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 :root {
@@ -25,10 +26,15 @@ a {
 
 /*styles for the container*/
 .container {
+  position: fixed;
+  top: 17px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: calc(100vh - 17px);
+  overflow: hidden;
   background-color: var(--container-bck-color);
   border: 1px solid var(--Gold-Brass);
-  margin: 17px auto;
-  width: 90%;
 }
 
 /*styles for the inner container*/
@@ -37,11 +43,27 @@ a {
   width: 95%;
 }
 
+/* Make main scrollable within the fixed container */
+main {
+  padding-top: 80px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/*  */
+.section-end {
+  width: 100px;
+  height: 1px;
+  margin: 40px auto 10px auto;
+  background: var(--Gold-Brass);
+}
+
 @media (min-width: 768px) {
   /*styles for the container*/
   .container {
-    margin: 28px auto;
+    top: 28px;
     width: 94%;
+    height: calc(100vh - 28px);
   }
 
   /*styles for the inner container*/
@@ -53,8 +75,9 @@ a {
 @media (min-width: 1024px) {
   /*styles for the container*/
   .container {
-    margin-top: 25px;
+    top: 25px;
     width: 97%;
+    height: calc(100vh - 25px);
   }
 
   /*styles for the inner container*/
