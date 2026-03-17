@@ -24,7 +24,7 @@ export const Navbar = () => {
       <div className="inner-navbar">
         {/* logo */}
         <p id="hero" className="logo">
-          A.N.
+          <a href="#Hero">A.N.</a>
         </p>
 
         {/* toggle images */}
