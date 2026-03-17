@@ -1,1 +1,110 @@
+/* setting the size for the icons*/
+img {
+  width: 32px;
+  height: 32px;
+}
 
+/* inner navbar contianer */
+.inner-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* styles for the menu items*/
+.mobile-menu li {
+  list-style: none;
+  margin-top: 40px; /*to give space between navlinks */
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 7.5px;
+}
+.mobile-menu a,
+.desktop-menu a {
+  color: var(--Menu-Text); /*setting the color for the menu items*/
+}
+.mobile-menu li:first-child {
+  margin-top: 110px; /* giving the first item margin at the top*/
+}
+
+/* logo */
+.logo {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 5px;
+  color: var(--headings-color);
+}
+
+/* the diveder line  */
+.box {
+  width: 5px;
+  height: 5px;
+  background-color: var(--Gold-Brass);
+}
+.line {
+  width: 40px;
+  height: 1px;
+  background-color: var(--Gold-Brass);
+}
+.divider {
+  margin-top: 105px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*container for desktop*/
+.desktop-menu {
+  display: none; /* hiding the desktop menu on mobile*/
+}
+
+/**/
+@media (min-width: 768px) {
+  /* the main container for the desktop menu*/
+  .desktop-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* inner container for the desktop menu items */
+  .desktop-menu {
+    display: block; /*displaying the desktop menu*/
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+  }
+  .desktop-menu li {
+    list-style: none;
+    letter-spacing: 3.5px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* hiding the mobile menu on desktop */
+  .mobile-menu {
+    display: none; /* hiding the mobile menu on desktop */
+  }
+  .mobile-toggle {
+    display: none; /* hiding the mobile toggle on desktop */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* inner container for the desktop menu items */
+  .desktop-menu {
+    gap: 65px;
+  }
+  .desktop-menu li {
+    letter-spacing: 7.5px;
+    font-size: 16px;
+  }
+}
