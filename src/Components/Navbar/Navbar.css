@@ -13,6 +13,17 @@ img {
   margin-top: 15px;
 }
 
+/* Make navbar fixed at the top of the container */
+.inner-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center the inner container horizontally */
+  width: 90%;
+  background-color: var(--container-bck-color);
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
+
 /* styles for the menu items*/
 .mobile-menu li {
   list-style: none;
@@ -96,10 +107,22 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  .inner-container {
+    top: 0;
+    width: 94%;
+  }
+}
+
 @media (min-width: 1024px) {
+  .inner-container {
+    top: 0;
+    width: 97%;
+  }
+
   /* inner container for the desktop menu items */
   .desktop-menu {
-    gap: 65px;
+    gap: 40px;
   }
   .desktop-menu li {
     letter-spacing: 7.5px;
