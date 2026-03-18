@@ -52,15 +52,23 @@ main {
 
 /* Add scroll margin to sections to account for navbar */
 section {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 85px;
 }
 
-/*  */
+/* horizontal line at the end of each section */
 .section-end {
   width: 100px;
   height: 1px;
   margin: 40px auto 10px auto;
   background: var(--Gold-Brass);
+}
+
+/* Header for each section */
+.section-header {
+  letter-spacing: 3.5px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--headings-color);
 }
 
 @media (min-width: 768px) {
