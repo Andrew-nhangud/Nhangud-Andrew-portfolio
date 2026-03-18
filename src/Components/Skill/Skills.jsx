@@ -45,6 +45,9 @@ export const Skills = () => {
           </div>
         ))}
       </div>
+
+      {/* diveder line to show the end */}
+      <div className="section-end"></div>
     </section>
   );
 };
