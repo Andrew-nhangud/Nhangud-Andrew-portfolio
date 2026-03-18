@@ -1,0 +1,56 @@
+/* Header styles */
+.expertise-header {
+  font-size: 24px;
+  line-height: 32px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--headings-color);
+}
+
+/* skills name styles */
+.expertise-label {
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--Menu-Text);
+}
+
+/* skills level styles */
+.expertise-level {
+  color: var(--Gold-Brass);
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+/* Main container */
+#expertise {
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+  /* skills name styles */
+  .expertise-label {
+    font-size: 22px;
+  }
+
+  /* skills level styles */
+  .expertise-level {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  /* Header styles */
+  .expertise-header {
+    font-size: 29px;
+  }
+}
+@media (min-width: 1024px) {
+  /* tools main containers*/
+  .expertise-tools {
+    margin-top: 90px;
+  }
+}
