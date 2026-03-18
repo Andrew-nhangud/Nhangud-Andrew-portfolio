@@ -1,12 +1,14 @@
 import "./Skills.css";
 
 export const Skills = () => {
+  // Skills array
   const skills = [
     { label: "HTML5", level: "PROFICIENT" },
     { label: "CSS3", level: "PROFICIENT" },
     { label: "JavaScript(ES6+)", level: "BEGINNER" },
     { label: "React", level: "BEGGINER" },
   ];
+  // tools array
   const tools = [
     { label: "Git ", purpose: "VERSION CONTROL" },
     { label: "Figma ", purpose: "UI/UX DESIGN" },
