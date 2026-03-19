@@ -1,0 +1,77 @@
+/* main container */
+#contact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* haeder of the section */
+.section-header {
+  margin-bottom: 50px;
+}
+
+/* contact message styles */
+.contact-message {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  font-style: italic;
+  color: var(--Menu-Text);
+}
+
+/* gmail styles */
+.gmail {
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--headings-color);
+}
+
+/* container for the images */
+.contact-icons {
+  gap: 20px;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.contact-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+/* copy right styles */
+.copy-rights {
+  color: #4e4c4c;
+  font-weight: 300;
+  max-width: 210px;
+  margin: auto;
+}
+
+/* line divider */
+.divider {
+  margin-top: 80px;
+}
+
+/* line divider */
+.section-end {
+  margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+  /* contact message styles */
+  .contact-message {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  /* gmail styles */
+  .gmail {
+    font-size: 23px;
+    line-height: 32px;
+    color: var(--headings-color);
+  }
+
+  /* images for the contact section */
+  .contact-icons img {
+    width: 25px;
+    height: 25px;
+  }
+}
