@@ -3,21 +3,8 @@ import "./Project.css";
 const projectLists = [
   {
     label: "Kumo Gardens",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus laborum delectus odio ullam totam magnam maxime temporibus ipsa amet neque excepturi officiis harum id",
-    skills: ["React", "HTML", "CSS", "JavaScript", "Framer Motion"],
-  },
-  {
-    label: "API project",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus laborum delectus odio ullam totam magnam maxime temporibus ipsa amet neque excepturi officiis harum id",
-    skills: ["React", "HTML", "CSS", "JavaScript", "Framer Motion"],
-  },
-  {
-    label: "Third idea",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus laborum delectus odio ullam totam magnam maxime temporibus ipsa amet neque excepturi officiis harum id",
-    skills: ["React", "HTML", "CSS", "JavaScript", "Framer Motion"],
+    description: " COMING SOON ",
+    skills: [],
   },
 ];
 
