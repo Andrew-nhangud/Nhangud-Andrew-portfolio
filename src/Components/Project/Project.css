@@ -1,0 +1,76 @@
+/* The main container*/
+#portfolio {
+  text-align: center;
+  margin-top: 110px; /* pushing down the project section*/
+}
+
+/* Project container */
+.project-container {
+  margin-top: 30px;
+}
+
+/* Project header */
+.project-name {
+  color: var(--headings-color);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+/* project description */
+.project-description {
+  font-size: 19px;
+  max-width: 312px; /* setting the max width for the description*/
+  color: var(--Menu-Text);
+  margin: 0px auto 24px auto;
+}
+
+/* styles for the header of the section*/
+.section-header {
+  margin-bottom: 80px;
+}
+
+/* styles for the langauges used for each project*/
+.project-languages {
+  gap: 7px;
+  display: flex;
+  font-size: 14px;
+  line-height: 16px;
+  flex-direction: row;
+  color: var(--Gold-Brass);
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  /* project description */
+  .project-description {
+    color: var(--Menu-Text);
+    max-width: 512px; /* setting the max width for the description*/
+    margin: 0px auto 24px auto;
+    font-size: 19px;
+  }
+
+  /* styles for the langauges used for each project*/
+  .project-languages {
+    font-size: 15px;
+  }
+}
+
+/*  */
+@media (min-width: 1024px) {
+  /* The main container*/
+  #portfolio {
+    margin-top: 130px;
+  }
+
+  /* Project header */
+  .project-name {
+    font-size: 45px;
+  }
+
+  /* styles for the langauges used for each project*/
+  .project-languages {
+    font-size: 17px;
+  }
+}
