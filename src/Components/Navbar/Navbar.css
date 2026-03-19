@@ -83,6 +83,7 @@ img {
   .inner-container {
     top: 0;
     width: 94%;
+    margin-left: 20px;
   }
 
   /* inner navbar contianer */
