@@ -10,7 +10,7 @@ export const Contact = () => {
       <p className="gmail">Andrewnhangud3785@gmail.com</p>
 
       <div className="contact-icons">
-        <a href="https://github.com/Andrew-nhangud?tab=repositories">
+        <a href="https://github.com/Andrew-nhangud">
           <img src={githubIcon} alt="github icon" />
         </a>
         <a href="https://www.linkedin.com/in/andrew-nhangud">
