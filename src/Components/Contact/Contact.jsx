@@ -13,7 +13,7 @@ export const Contact = () => {
         <a href="https://github.com/Andrew-nhangud?tab=repositories">
           <img src={githubIcon} alt="github icon" />
         </a>
-        <a href="www.linkedin.com/in/andrew-nhangud">
+        <a href="https://www.linkedin.com/in/andrew-nhangud">
           <img src={linkedinIcon} alt="linkedin icon" />
         </a>
       </div>
