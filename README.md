@@ -95,4 +95,4 @@ If you want to collaborate, hire, or just talk tech:
 
 The code in this repository is licensed under the **MIT License**. All personal content and images are **Copyright © Andrew Nhangud**.
 
-> 💭 **Final Thought:** I’m a developer who enjoys turning ideas into real, interactive experiences. This portfolio represents where I am right now — and I’m only getting started.
+> 💭 **Final Thought:** I’m a developer who enjoys turning ideas into real interactive experiences. This portfolio represents where I am right now — and I’m only getting started.
