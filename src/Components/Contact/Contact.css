@@ -1,77 +1,77 @@
 /* main container */
 #contact {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
 }
 
 /* haeder of the section */
 .section-header {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 /* contact message styles */
 .contact-message {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 1.75rem;
   font-style: italic;
   color: var(--Menu-Text);
 }
 
 /* gmail styles */
 .gmail {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  line-height: 2rem;
   color: var(--headings-color);
 }
 
 /* container for the images */
 .contact-icons {
-  gap: 20px;
+  gap: 1.25rem;
   display: flex;
-  margin-top: 50px;
+  margin-top: 3.125rem;
   justify-content: center;
 }
 .contact-icons img {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 /* copy right styles */
 .copy-rights {
   color: #4e4c4c;
   font-weight: 300;
-  max-width: 210px;
+  max-width: 13.125rem;
   margin: auto;
 }
 
 /* line divider */
 .divider {
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 
 /* line divider */
 .section-end {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 
 @media (min-width: 768px) {
   /* contact message styles */
   .contact-message {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }
 
   /* gmail styles */
   .gmail {
-    font-size: 23px;
-    line-height: 32px;
+    font-size: 1.4375rem;
+    line-height: 2rem;
     color: var(--headings-color);
   }
 
   /* images for the contact section */
   .contact-icons img {
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
   }
 }
