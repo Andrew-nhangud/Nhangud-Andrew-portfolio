@@ -28,14 +28,14 @@ a {
 /*styles for the container*/
 .container {
   position: fixed;
-  top: 17px;
+  top: 1.0625rem;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  height: calc(100vh - 17px);
+  height: calc(100vh - 1.0625rem);
   overflow: hidden;
   background-color: var(--container-bck-color);
-  border: 1px solid var(--Gold-Brass);
+  border: 0.0625rem solid var(--Gold-Brass);
 }
 
 /*styles for the inner container*/
@@ -46,38 +46,38 @@ a {
 
 /* Make main scrollable within the fixed container */
 main {
-  padding-top: 80px;
+  padding-top: 5rem;
   height: 100%;
   overflow-y: auto;
 }
 
 /* Add scroll margin to sections to account for navbar */
 section {
-  scroll-margin-top: 85px;
+  scroll-margin-top: 5.3125rem;
 }
 
 /* horizontal line at the end of each section */
 .section-end {
-  width: 100px;
-  height: 1px;
-  margin: 40px auto 10px auto;
+  width: 6.25rem;
+  height: 0.0625rem;
+  margin: 2.5rem auto 0.625rem auto;
   background: var(--Gold-Brass);
 }
 
 /* Header for each section */
 .section-header {
-  letter-spacing: 3.5px;
-  font-size: 14px;
-  line-height: 20px;
+  letter-spacing: 0.21875rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   color: var(--headings-color);
 }
 
 @media (min-width: 768px) {
   /*styles for the container*/
   .container {
-    top: 28px;
+    top: 1.75rem;
     width: 94%;
-    height: calc(100vh - 28px);
+    height: calc(100vh - 1.75rem);
   }
 
   /*styles for the inner container*/
@@ -89,9 +89,9 @@ section {
 @media (min-width: 1024px) {
   /*styles for the container*/
   .container {
-    top: 25px;
+    top: 1.5625rem;
     width: 97%;
-    height: calc(100vh - 25px);
+    height: calc(100vh - 1.5625rem);
   }
 
   /*styles for the inner container*/
