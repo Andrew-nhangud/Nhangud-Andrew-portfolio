@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import "./Navbar.css";
 import menuIcon from "../../assets/images/menu-bar.svg";
 import closeIcon from "../../assets/images/close.svg";
@@ -19,51 +20,108 @@ export const Navbar = () => {
   //  Helper to close menu when a link is clicked
   const handleLinkClick = () => setIsOpen(false);
 
+  const menuVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.3, staggerChildren: 0.1 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.3 },
+    },
+  };
+
   return (
-    <div className="inner-container ">
+    <motion.div
+      className="inner-container "
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="inner-navbar">
         {/* logo */}
         <p id="hero" className="logo">
-          <a href="#Hero">A.N.</a>
+          <motion.a
+            href="#Hero"
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            A.N.
+          </motion.a>
         </p>
 
         {/* toggle images */}
-        <img
+        <motion.img
           src={isOpen ? closeIcon : menuIcon}
           alt="Toggle Menu"
           onClick={toggleMenu}
           className="mobile-toggle"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
         />
 
         {/* Desktop Menu */}
-        <ul className="desktop-menu">
-          {navLinks.map((link) => (
-            <li key={link.id}>
-              <a href={`#${link.id}`}>{link.label}</a>
-            </li>
+        <motion.ul className="desktop-menu">
+          {navLinks.map((link, index) => (
+            <motion.li
+              key={link.id}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <motion.a
+                href={`#${link.id}`}
+                whileHover={{ color: "#7c3aed" }}
+                transition={{ duration: 0.2 }}
+              >
+                {link.label}
+              </motion.a>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className="mobile-menu">
+        <motion.ul
+          className="mobile-menu"
+          variants={menuVariants}
+          initial="hidden"
+          animate="visible"
+        >
           {navLinks.map((link) => (
-            <li key={link.id}>
-              <a href={`#${link.id}`} onClick={handleLinkClick}>
+            <motion.li key={link.id} variants={itemVariants}>
+              <motion.a
+                href={`#${link.id}`}
+                onClick={handleLinkClick}
+                whileHover={{ x: 10 }}
+                transition={{ duration: 0.2 }}
+              >
                 {link.label}
-              </a>
-            </li>
+              </motion.a>
+            </motion.li>
           ))}
 
           {/* the diveder line */}
-          <div className="divider">
-            <div className="line"></div>
-            <div className="box"></div>
-            <div className="line"> </div>
-          </div>
-        </ul>
+          <motion.div
+            className="divider"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+          >
+            <motion.div className="line"></motion.div>
+            <motion.div className="box"></motion.div>
+            <motion.div className="line"> </motion.div>
+          </motion.div>
+        </motion.ul>
       )}
-    </div>
+    </motion.div>
   );
 };
