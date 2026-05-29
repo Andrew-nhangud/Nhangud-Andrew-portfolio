@@ -1,0 +1,43 @@
+.custom-cursor-dot,
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate3d(-50%, -50%, 0);
+  transition:
+    opacity 180ms ease,
+    transform 120ms linear;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.custom-cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(60, 20, 80, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.custom-cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 2px solid rgba(124, 58, 237, 0.9);
+  border-radius: 50%;
+  transform-origin: center;
+}
+
+/* When hovering interactive elements, enlarge ring */
+button:hover,
+a:hover,
+input:hover,
+textarea:hover,
+select:hover {
+  cursor: none; /* keep native cursor hidden */
+}
+
+/* Provide a modifier class to enlarge if needed via JS */
+.custom-cursor-ring.enlarged {
+  transform: translate3d(-50%, -50%, 0) scale(1.5);
+}
