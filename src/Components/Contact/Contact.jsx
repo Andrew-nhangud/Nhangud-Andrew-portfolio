@@ -1,34 +1,113 @@
+import { motion } from "framer-motion";
 import "./Contact.css";
 import githubIcon from "../../assets/images/github.svg";
 import linkedinIcon from "../../assets/images/linkedin.svg";
 
 export const Contact = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const iconVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.6 },
+    },
+    hover: {
+      scale: 1.2,
+      rotate: 5,
+    },
+  };
+
   return (
     <section id="contact">
-      <p className="section-header">RESERVATIONS & CONTACT</p>
-      <p className="contact-message">Interested in working together?</p>
-      <p className="gmail">Andrewnhangud3785@gmail.com</p>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <motion.p className="section-header" variants={itemVariants}>
+          RESERVATIONS & CONTACT
+        </motion.p>
+        <motion.p className="contact-message" variants={itemVariants}>
+          Interested in working together?
+        </motion.p>
+        <motion.p className="gmail" variants={itemVariants}>
+          Andrewnhangud3785@gmail.com
+        </motion.p>
+      </motion.div>
 
-      <div className="contact-icons">
-        <a href="https://github.com/Andrew-nhangud">
+      <motion.div
+        className="contact-icons"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <motion.a
+          href="https://github.com/Andrew-nhangud"
+          variants={iconVariants}
+          whileHover="hover"
+        >
           <img src={githubIcon} alt="github icon" />
-        </a>
-        <a href="https://www.linkedin.com/in/andrew-nhangud">
+        </motion.a>
+        <motion.a
+          href="https://www.linkedin.com/in/andrew-nhangud"
+          variants={iconVariants}
+          whileHover="hover"
+        >
           <img src={linkedinIcon} alt="linkedin icon" />
-        </a>
-      </div>
+        </motion.a>
+      </motion.div>
 
-      <div className="divider">
-        <div className="line"></div>
-        <div className="box"></div>
-        <div className="line"> </div>
-      </div>
+      <motion.div
+        className="divider"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <motion.div className="line"></motion.div>
+        <motion.div className="box"></motion.div>
+        <motion.div className="line"> </motion.div>
+      </motion.div>
 
-      <p className="copy-rights">
+      <motion.p
+        className="copy-rights"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        viewport={{ once: true }}
+      >
         &copy; 2026 Andrew Nhangud. All rights reserved.
-      </p>
+      </motion.p>
 
-      <div className="section-end"></div>
+      <motion.div
+        className="section-end"
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        viewport={{ once: true }}
+      ></motion.div>
     </section>
   );
 };
