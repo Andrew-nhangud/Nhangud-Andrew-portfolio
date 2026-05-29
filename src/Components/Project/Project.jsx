@@ -1,39 +1,104 @@
+import { motion } from "framer-motion";
 import "./Project.css";
+import { link } from "framer-motion/client";
+import { Link } from "react";
 
 const projectLists = [
   {
     label: "Kumo Gardens",
-    description: " COMING SOON ",
-    skills: [],
+    description:
+      "This fast static React website showcases a local garden venue's services and accommodations using a nature-inspired design. It features reusable components and custom CSS along with fully responsive navigation optimized for both mobile and desktop screens.",
+    skills: ["React", "CSS", "HTML"],
+    link: "",
+  },
+  {
+    label: "Booking website",
+    description:
+      "A dynamic artist booking platform built with React, HTML, and CSS that manages the entire reservation workflow from search to confirmation. It integrates a mock API via JSON Server and React Router with dynamic parameters to fetch and display detailed artist profiles. Users can search for performers, fill out a booking form secured by React Hook Form, and view their scheduled events instantly on a dedicated bookings overview page.",
+    skills: ["React", "CSS", "HTML"],
+    link: "",
   },
 ];
 
 export const Project = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: -30 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.7, ease: "easeOut" },
+    },
+  };
+
   return (
     <section id="portfolio">
-      <h1 className="section-header"> PORTFOLIO</h1>
-      <div>
+      <motion.h1
+        className="section-header"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        {" "}
+        PORTFOLIO
+      </motion.h1>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
         {projectLists.map((project, index) => (
-          <div key={index} className="project-container">
-            <p className="project-name">{project.label}</p>
-            <p className="project-description">{project.description}</p>
-            <div className="project-languages">
-              {project.skills.map((skill, index) => (
-                <span key={index} className="skill-tag">
-                  {skill}
-                </span>
-              ))}
-            </div>
+          <motion.div
+            key={index}
+            className="project-container"
+            variants={itemVariants}
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <a href={project.link}>
+              <motion.p className="project-name">{project.label}</motion.p>
+              <motion.p className="project-description">
+                {project.description}
+              </motion.p>
+              <motion.div className="project-languages">
+                {project.skills.map((skill, index) => (
+                  <motion.span
+                    key={index}
+                    className="skill-tag"
+                    whileHover={{ scale: 1.1 }}
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </motion.div>
 
-            {/* the diveder line */}
-            <div className="divider">
-              <div className="line"></div>
-              <div className="box"></div>
-              <div className="line"> </div>
-            </div>
-          </div>
+              <motion.div
+                className="divider"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <motion.div className="line"></motion.div>
+                <motion.div className="box"></motion.div>
+                <motion.div className="line"> </motion.div>
+              </motion.div>
+            </a>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
