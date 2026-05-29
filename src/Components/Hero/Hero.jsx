@@ -1,25 +1,68 @@
+import { motion } from "framer-motion";
 import "./Hero.css";
 
 export const Hero = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+
   return (
     <section id="Hero">
-      <div className="hero inner-contianer ">
-        <p>PORTFOLIO & CURRICULUM VITAE</p>
-        <h1>ANDREW NHANGUD</h1>
+      <motion.div
+        className="hero inner-contianer"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <motion.p variants={itemVariants}>
+          PORTFOLIO & CURRICULUM VITAE
+        </motion.p>
+        <motion.h1
+          variants={itemVariants}
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          ANDREW NHANGUD
+        </motion.h1>
 
-        <div className="divider">
-          <div className="line"></div>
-          <div className="box"></div>
-          <div className="line"> </div>
-        </div>
+        <motion.div className="divider" variants={itemVariants}>
+          <motion.div className="line"></motion.div>
+          <motion.div className="box"></motion.div>
+          <motion.div className="line"> </motion.div>
+        </motion.div>
 
-        <h2>Front-End Developer & Interface Designer</h2>
-        <p>
+        <motion.h2 variants={itemVariants}>
+          Front-End Developer & Interface Designer
+        </motion.h2>
+        <motion.p variants={itemVariants}>
           Crafting digital experiences with the precision and care of a
           Michelin-starred kitchen.
-        </p>
-      </div>
-      <div className="section-end" />
+        </motion.p>
+      </motion.div>
+      <motion.div
+        className="section-end"
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
+        transition={{ duration: 0.8, delay: 1 }}
+        viewport={{ once: true }}
+      />
     </section>
   );
 };
