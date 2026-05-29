@@ -5,21 +5,25 @@ import { Skills } from "./Components/Skill/Skills";
 import { Project } from "./Components/Project/Project";
 import { About } from "./Components/About/About";
 import { Contact } from "./Components/Contact/Contact";
+import Cursor from "./Components/Cursor/Cursor";
 
 function App() {
   return (
-    <div className="container">
-      <nav>
-        <Navbar />
-      </nav>
-      <main>
-        <Hero />
-        <Skills />
-        <Project />
-        <About />
-        <Contact />
-      </main>
-    </div>
+    <>
+      <Cursor />
+      <div className="container">
+        <nav>
+          <Navbar />
+        </nav>
+        <main>
+          <Hero />
+          <Skills />
+          <Project />
+          <About />
+          <Contact />
+        </main>
+      </div>
+    </>
   );
 }
 
