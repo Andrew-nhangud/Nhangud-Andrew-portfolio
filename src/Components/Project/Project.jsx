@@ -9,14 +9,14 @@ const projectLists = [
     description:
       "This fast static React website showcases a local garden venue's services and accommodations using a nature-inspired design. It features reusable components and custom CSS along with fully responsive navigation optimized for both mobile and desktop screens.",
     skills: ["React", "CSS", "HTML"],
-    link: "",
+    link: "https://khumo-gardens.vercel.app/",
   },
   {
     label: "Booking website",
     description:
       "A dynamic artist booking platform built with React, HTML, and CSS that manages the entire reservation workflow from search to confirmation. It integrates a mock API via JSON Server and React Router with dynamic parameters to fetch and display detailed artist profiles. Users can search for performers, fill out a booking form secured by React Hook Form, and view their scheduled events instantly on a dedicated bookings overview page.",
     skills: ["React", "CSS", "HTML"],
-    link: "",
+    link: "https://booking-artist.vercel.app/",
   },
 ];
 
