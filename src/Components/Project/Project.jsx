@@ -67,7 +67,7 @@ export const Project = () => {
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <a href={project.link}>
+            <a href={project.link} target="blank">
               <motion.p className="project-name">{project.label}</motion.p>
               <motion.p className="project-description">
                 {project.description}
