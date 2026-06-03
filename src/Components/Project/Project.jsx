@@ -21,7 +21,7 @@ const projectLists = [
   {
     label: "kanban",
     description:
-      "A responsive, client side task management application designed for seamless daily workflow organization. The application enables users to dynamically track tasks across structured workflows while ensuring data persistence and cross device accessibility.",
+      "A responsive, client side task management application designed for seamless daily workflow organization. The application enables users to dynamically track tasks across structured workflows while ensuring data persistence and cross gitdevice accessibility.",
     skills: ["JavaScript", "CSS", "HTML"],
     link: "https://andnha-25109-fto-2502a-group-a1-and.vercel.app",
   },
