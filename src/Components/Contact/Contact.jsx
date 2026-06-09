@@ -52,7 +52,7 @@ export const Contact = () => {
           Interested in working together?
         </motion.p>
         <motion.p className="gmail" variants={itemVariants}>
-          Andrewnhangud3785@gmail.com
+          me@andrewnhangud.com
         </motion.p>
       </motion.div>
 
