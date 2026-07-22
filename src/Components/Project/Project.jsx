@@ -5,7 +5,7 @@ import { Link } from "react";
 
 const projectLists = [
   {
-    label: "Kumo Gardens",
+    label: "Khumo Gardens",
     description:
       "This fast static React website showcases a local garden venue's services and accommodations using a nature-inspired design. It features reusable components and custom CSS along with fully responsive navigation optimized for both mobile and desktop screens.",
     skills: ["React", "CSS", "HTML"],
