@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import "./Project.css";
-import { link } from "framer-motion/client";
-import { Link } from "react";
 
 const projectLists = [
   {
@@ -33,8 +31,7 @@ export const Project = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.2,
+        staggerChildren: 0.1,
       },
     },
   };
@@ -44,7 +41,7 @@ export const Project = () => {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.7, ease: "easeOut" },
+      transition: { duration: 0.5, ease: "easeOut" },
     },
   };
 
@@ -64,7 +61,7 @@ export const Project = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         {projectLists.map((project, index) => (
           <motion.div
