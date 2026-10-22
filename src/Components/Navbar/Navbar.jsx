@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   // Define links with IDs
   const navLinks = [
-    { label: "SERVICE", id: "service" },
+    { label: "SERVICES", id: "services" },
     { label: "PORTFOLIO", id: "portfolio" },
     { label: "ABOUT", id: "about" },
     { label: "CONTACT", id: "contact" },

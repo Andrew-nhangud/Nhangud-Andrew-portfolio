@@ -23,7 +23,7 @@ export const Services = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        SERVICE
+        SERVICES
       </motion.h1>
       <motion.p
         className="services-intro"
