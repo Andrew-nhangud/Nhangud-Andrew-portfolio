@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 /*styles for the container*/
 .container {
   position: fixed;
