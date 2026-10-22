@@ -1,7 +1,7 @@
 import "./styles/global.css";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Hero } from "./Components/Hero/Hero";
-import { Skills } from "./Components/Skill/Skills";
+import { Services } from "./Components/Services/Services";
 import { Project } from "./Components/Project/Project";
 import { About } from "./Components/About/About";
 import { Contact } from "./Components/Contact/Contact";
@@ -17,7 +17,7 @@ function App() {
         </nav>
         <main>
           <Hero />
-          <Skills />
+          <Services />
           <Project />
           <About />
           <Contact />
