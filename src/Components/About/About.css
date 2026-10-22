@@ -1,107 +1,99 @@
-/*  */
+/* styles for the about container */
 #about {
   margin-top: 9.375rem;
+  max-width: 16rem; /*setting the max width for the content*/
+  margin: auto; /*placing the content in the center*/
 }
 
-/*  */
-.high-light {
-  color: var(--headings-color);
-  font-size: 1.1875rem;
-  font-style: italic;
-  font-weight: 800;
+/*styles for the about-intro */
+.about-intro {
+  color: var(--Gold-Brass);
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 300;
+  margin-bottom: -3rem; /*removing the space at the bottom*/
 }
 
-/*  */
-.about-para {
-  font-size: 1.25rem;
-  font-weight: 500;
-  width: 90%;
-  margin: 0 auto 0 auto;
+/*styles for the about-sec-intro*/
+.about-sec-intro {
   color: var(--Menu-Text);
+  font-size: 1.4rem;
+  margin-top: -1rem;
 }
 
-/*  */
-.first-para {
-  margin: 0 auto 0.625rem auto;
-}
-
-/*  */
-.second-para {
-  margin: 0 auto 1.25rem auto;
-}
-
-/*  */
-.fouth-para {
-  font-style: italic;
+/*styles for the about heading sections*/
+.about-heading {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
   color: var(--headings-color);
-  font-size: 1.25rem;
-  width: 90%;
-  margin: 1.5625rem auto 0 auto;
+}
+
+/*styles for the about-sub-heading*/
+.about-sub-heading {
+  color: var(--Gold-Brass);
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*styles for the approach para*/
+.approach-para {
+  margin-top: 1rem;
+  margin-bottom: -2rem;
+  color: var(--Menu-Text);
+  font-size: 1.3rem;
+}
+
+/*styles for about heading*/
+.about-list-heading {
+  color: var(--Gold-Brass);
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/*styles for the first about list*/
+.first-about-list {
+  margin-top: -1rem;
+}
+/*styles for the last about list*/
+.last-about-list {
+  margin-bottom: -2rem;
+}
+
+/*styles for technical skills list*/
+.about-list li {
+  font-size: 1.19rem;
+}
+
+/*styles for Experience heading*/
+.about-XP {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: var(--Gold-Brass);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+/*styles for the subHeading*/
+.about-XP-sub-heading {
+  color: #525050;
+  font-size: 0.9rem;
+}
+
+/*styles for the experience para*/
+.about-XP-para {
+  margin-bottom: 1.7rem;
 }
 
 @media (min-width: 768px) {
-  /*  */
+  /* styles for the about container */
   #about {
-    margin-bottom: 6.25rem;
-  }
-
-  /*  */
-  .about-para {
-    font-size: 1.4375rem;
-    font-weight: 500;
-    width: 90%;
-    margin: 0 auto 0 auto;
-    color: var(--Menu-Text);
-  }
-
-  /*  */
-  .high-light {
-    color: var(--headings-color);
-    font-size: 1.4375rem;
-    font-style: italic;
-    font-weight: 800;
-  }
-
-  /*  */
-  .first-para {
-    margin: 0 auto 1.25rem auto;
-  }
-
-  /*  */
-  .second-para {
-    margin: 0 auto 1.25rem auto;
-  }
-}
-
-@media (min-width: 1024px) {
-  /*  */
-  #about {
-    margin-bottom: 11.25rem;
-  }
-
-  /*  */
-  .about-para {
-    font-size: 1.5rem;
-    width: 80%;
-    margin: 0 auto 0 auto;
-  }
-
-  /*  */
-  .first-para {
-    margin: 0 auto 0.625rem auto;
-  }
-
-  /*  */
-  .second-para {
-    margin: 0 auto 1.25rem auto;
-  }
-
-  /*  */
-  .fouth-para {
-    font-style: italic;
-    color: var(--headings-color);
-    font-size: 1.375rem;
-    width: 90%;
-    margin: 1.5625rem auto 0 auto;
+    margin-top: 9.375rem;
+    max-width: 32rem; /*setting the max width for the content*/
+    margin: auto; /*placing the content in the center*/
   }
 }
