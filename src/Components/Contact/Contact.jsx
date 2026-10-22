@@ -54,6 +54,9 @@ export const Contact = () => {
         <motion.p className="gmail" variants={itemVariants}>
           me@andrewnhangud.com
         </motion.p>
+        <motion.p className="cell-number" variants={itemVariants}>
+          +27 79 299 2771
+        </motion.p>
       </motion.div>
 
       <motion.div
