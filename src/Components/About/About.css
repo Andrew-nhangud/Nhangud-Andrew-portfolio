@@ -67,6 +67,7 @@
 /*styles for technical skills list*/
 .about-list li {
   font-size: 1.19rem;
+  list-style: none;
 }
 
 /*styles for Experience heading*/
