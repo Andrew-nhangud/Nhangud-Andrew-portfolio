@@ -1,0 +1,117 @@
+/*styles for the card container*/
+.card-contianer {
+  border: 1px solid #b6b3af;
+  width: 95%; /*setting the card contianer*/
+  margin: auto; /*centering the card container*/
+  margin-top: 3rem;
+}
+.card-contianer.premium-card {
+  border-color: #8b5cf6;
+}
+.card-contianer:nth-last-child {
+  border: 1px solid var(--headings-color);
+}
+
+/*styles for the inner card contianer*/
+.card {
+  width: 87%; /*giving the card contianer a small contianer*/
+  margin: auto; /*placing the contianer in the center*/
+  text-align: center; /*placing the words at the start of the contianer*/
+}
+
+/*styles for the card type name*/
+.card-type-name {
+  color: var(--headings-color);
+  font-size: 2.52rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
+
+/*styles for the card price*/
+.card-price {
+  font-style: italic;
+  color: var(--Gold-Brass);
+  font-weight: 300;
+}
+
+/*styles for the card intro*/
+.card-para {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  color: var(-- Menu-Text);
+}
+
+/*styles for the card section*/
+.card-header {
+  color: var(--Gold-Brass);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  line-height: 1rem;
+  margin-top: 2.25rem;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+/*styles for the list container*/
+ul li {
+  list-style: none;
+}
+
+/*styles for the card list*/
+.card-list {
+  margin-top: 7px;
+}
+
+/*adds space between the card header and card info*/
+.spacer {
+  margin-bottom: 10px;
+}
+
+/*styles for the card payment*/
+.card-payment {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(-- Menu-Text);
+}
+
+/*styles for the horizontal line*/
+.horizontal-line {
+  margin: 40px 0px 30px 0px; /*adding space between the two sections of the card card*/
+}
+
+/*styles for the monthly fee section*/
+.card-monthly-section {
+  color: var(--headings-color);
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+.card-monthly-section span {
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+/*styles for the content para*/
+.card-content-para {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(-- Menu-Text);
+  margin-top: -0.2rem;
+}
+
+/*styles for the last paragraph of the card section*/
+.card-last-para {
+  font-style: italic;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  /*styles for the card container*/
+  .card-contianer {
+    border: 1px solid #b6b3af;
+    width: 85%; /*setting the card contianer*/
+    margin: auto; /*centering the card container*/
+    margin-top: 3rem;
+  }
+}
