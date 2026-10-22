@@ -15,7 +15,7 @@ export const Services = () => {
   };
 
   return (
-    <section id="service">
+    <section id="services">
       <motion.h1
         className="section-header"
         initial={{ opacity: 0, y: -20 }}
