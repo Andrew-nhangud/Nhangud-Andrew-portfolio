@@ -55,6 +55,13 @@
   margin-top: 6.25rem;
 }
 
+/*contact number*/
+.cell-number {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: var(--Gold-brass);
+}
+
 @media (min-width: 768px) {
   /* contact message styles */
   .contact-message {
