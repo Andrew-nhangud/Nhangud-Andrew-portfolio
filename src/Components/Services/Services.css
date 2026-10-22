@@ -1,0 +1,30 @@
+#service {
+  margin-top: 9.375rem;
+}
+
+@media (min-width: 768px) {
+  .services-intro {
+    font-size: 1.2rem;
+  }
+
+  .container-cards {
+    display: flex;
+    gap: 24px;
+  }
+
+  .container-cards .card-contianer {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+    margin: 3rem 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-cards {
+    display: flex;
+    gap: 40px;
+    max-width: 85%;
+    margin: auto;
+  }
+}
