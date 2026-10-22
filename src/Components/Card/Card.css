@@ -39,7 +39,7 @@
   margin-top: 0.5rem;
   font-size: 1.2rem;
   line-height: 1.3rem;
-  color: var(-- Menu-Text);
+  color: var(--Menu-Text);
 }
 
 /*styles for the card section*/
@@ -73,7 +73,7 @@ ul li {
   font-style: italic;
   font-weight: 500;
   font-size: 1.1rem;
-  color: var(-- Menu-Text);
+  color: var(--Menu-Text);
 }
 
 /*styles for the horizontal line*/
@@ -96,7 +96,7 @@ ul li {
 .card-content-para {
   font-weight: 500;
   font-size: 1.1rem;
-  color: var(-- Menu-Text);
+  color: var(--Menu-Text);
   margin-top: -0.2rem;
 }
 
