@@ -4,7 +4,7 @@ Welcome to my personal portfolio — a curated space where design meets function
 
 ## 🌐 Live Site
 
-👉 [Coming Soon]
+👉 [andrewnhangud.com](https://andrewnhangud.com)
 
 ---
 

@@ -98,7 +98,7 @@ export const Services = () => {
             "Ongoing upkeep so nothing breaks.",
             "Ongoing upkeep so nothing breaks.",
           ]}
-          contentDescriptionUpdate="One round of changes each month"
+          contentDescriptionUpdate="Three round of changes each month"
           contentDescriptionUpdate2="Change a price, add a service, swap an image send it through and I do it."
         />
       </motion.div>
