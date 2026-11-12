@@ -61,14 +61,14 @@ export const Services = () => {
           ]}
           contentDescription="You send me the text, images, logo, contact details, pricing and anything else your customers need to know. I handle the rest."
           contentDescription2="This package covers up to 8 images and 5 services. If you have more than that tell me up front and I'll quote you before we start."
-          paymentDescription="50% to get started, 50% before your website goes live."
+          paymentDescription="20% to get started, 80% before your website goes live."
           monthlyFee="400"
           monthlyList={[
             "Hosting handled for you.",
             "Security and performance updates.",
             "Ongoing upkeep so nothing breaks.",
           ]}
-          contentDescriptionUpdate="One round of changes each month"
+          contentDescriptionUpdate="Three round of changes each month"
           contentDescriptionUpdate2="Change a price, add a service, swap an image send it through and I do it."
         />
 
@@ -91,14 +91,14 @@ export const Services = () => {
           ]}
           contentDescription="You send me the text, images, logo, contact details, pricing and anything else your customers need to know. I handle the rest."
           contentDescription2="This package covers up to 20 images and 10 services. If you need more pages more content or a more advanced booking system tell me up front and I'll quote you before we start."
-          paymentDescription="30% to get started, 70% before your website goes live."
+          paymentDescription="Pay after the full website is up."
           monthlyFee="700"
           monthlyList={[
             "Hosting handled for you.",
-            "Ongoing upkeep so nothing breaks.",
+            "Security and performance updates.",
             "Ongoing upkeep so nothing breaks.",
           ]}
-          contentDescriptionUpdate="Three round of changes each month"
+          contentDescriptionUpdate="Seven round of changes each month"
           contentDescriptionUpdate2="Change a price, add a service, swap an image send it through and I do it."
         />
       </motion.div>
